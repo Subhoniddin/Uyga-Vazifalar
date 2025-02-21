@@ -1,0 +1,1 @@
+let vazifa = "hali berilmagan"
