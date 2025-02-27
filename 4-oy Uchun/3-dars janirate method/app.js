@@ -1,14 +1,15 @@
 // capitalize() metodini yozish.
 String.prototype.capitalize = function() {
+    let str = String(this)
     let result = '';
     let startWord = true;
-    for (let i = 0; i < this.length; i++) {
-        if(startWord && this[i] >= 'a' && this[i] <= 'z') {
-            result += String.fromCharCode(this.charCodeAt(i) - 32);
+    for (let i = 0; i < str.length; i++) {
+        if(startWord && str[i] >= 'a' && str[i] <= 'z') {
+            result += String.fromCharCode(str.charCodeAt(i) - 32);
         } else {
-            result += this[i];
+            result += str[i];
         }
-        startWord = (this[i] === ' ' || this[i] === '\t' || this[i] === '\n' || this[i] === ',' || this[i] === '.') // qaysi belgidan keyin
+        startWord = (str[i] === ' ' || str[i] === '\t' || str[i] === '\n' || str[i] === ',' || str[i] === '.') // qaysi belgidan keyin
     }
     return result;
 } 
@@ -127,5 +128,26 @@ let str3 = '0';
 console.log(str3.padStartNew(4, 1234)); 
 
 
+  // String includes method
+  String.prototype.includesNew = function(belgi) {
+        let str = String(this);
+        belgi = String(belgi);
+        let count = belgi.length;
+       
+        for (let i = 0; i < str.length; i++) {
+            if(str[i] == belgi[0]){
+                let ss = ''
+                for (let j = i; j < i+count; j++) {
+                    ss += str[j]
+                }
+                if(ss == belgi) {return true};
+            };          
+        } 
+        return false;
+  }
 
+  let str4 = "Sinov uchun yozilgan bu text @emil yoq";
+  console.log(str4.includes('@'));
+  
 
+String.prototype.
