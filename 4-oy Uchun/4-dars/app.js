@@ -110,4 +110,38 @@ const students = [
  
  console.log( findObj(students, newStudent)); // Bitta shuni darsda ishlab berdi ustoz :)
  
-  
+// sort() method
+function babSort(arr, asc) {
+    let n = arr.length;
+    let swapped;
+   if(asc == 'asc') {
+      do {
+        swapped = false;
+        for (let i = 0; i < n -1; i++) {
+          if(arr[i] > arr[i + 1]) {
+            [arr[i], arr[i+1]] = [arr[i+1], arr[i]];
+            swapped = true;
+          };
+        };
+        n--;
+      } while (swapped);
+    return arr;
+   }
+   if (asc == 'desc') {
+      do {
+        swapped = false;
+        for (let i = 0; i < n -1; i++) {
+          if(arr[i] < arr[i + 1]) {
+            [arr[i], arr[i+1]] = [arr[i+1], arr[i]];
+            swapped = true;
+          };
+        };
+        n--;
+      } while (swapped);
+    return arr;
+   }
+}
+
+let arr = [2,5,1,8,5,9,23,4,56,7];
+
+console.log(babSort(arr, 'desc'));  // asc  va desc degan string qabul qiladi ikkinchi qiymatga.
