@@ -102,10 +102,14 @@ console.log(checkPhoneNumber('+998(93)-443-66-33'));
   // Infinity curryingga multiply degan funksiya yozing.
 
   function first(a) {
+    let sum = a;
     function second(b) {
-        return b !== undefined ? first(a * b) : a;
+      if (b) {
+        sum += b;
+        return second; 
+      }
     }
-    second.valueOf = () => a;
+
     return second;
 }
 
