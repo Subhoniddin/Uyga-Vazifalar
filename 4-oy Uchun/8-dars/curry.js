@@ -26,21 +26,38 @@ console.log(curry(1)(2)(3)(4)(5)(1)(1)(1)());
 
 // calc(2)(3)(4)(0); // 9 (yig'indisi)
 // calc(2)(3)(4)(1); // 24 (ko'paytmasi)
+// function curry(num) {
+//     let sum = num;
+//     let p = num;
+//     return function calc(son) {
+//         if(typeof son == "number") {
+//             sum += son;
+//             p *= son;
+//             if(son === 0) {return sum;} else if(son === 1) {return p};
+//             return calc;
+//         } else {
+//             return son === 0 ? sum : p;
+//         };
+//     };
+// };
+// console.log(curry(1)(2)(3)(4)(5)(3)(5)(1));
+
 function curry(num) {
     let sum = num;
     let p = num;
     return function calc(son) {
         if(typeof son == "number") {
             sum += son;
-            p *= son;
-            if(son === 0) {return sum;} else if(son === 1) {return p};
+            if(son !== 0) {p *= son};
+            if(son === 0) {calc.res = sum} else if(son === 1) {calc.res = p};
             return calc;
         } else {
             return son === 0 ? sum : p;
         };
     };
 };
-console.log(curry(1)(2)(3)(4)(5)(3)(5)(1));
+console.log(curry(1)(2)(3)(4)(0)(3)(5)(1).res);
+
 // =================================================================
 // 3. Infinity Currying va string concatenation
 // Cheksiz bo’lib turadigan har xil turdagi qiymatlar kiritilganda, ularni string sifatida birlashtiradigan funktsiyani yozing. Argumentlar tugagach, stringni qaytarishingiz kerak.
