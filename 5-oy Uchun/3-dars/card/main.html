@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+          width: 90%;
+          margin: 2rem auto;
+        }
+        .tab_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tab_content p {
+            margin-right: 7rem;
+            line-height: 1.6;
+            color: #9a9a9a;
+            font-weight: 500;
+        }
+        .shaharNomi {
+            padding: 12px 35px;
+            border-radius: 5px;
+            background-color: #eeeda1;
+            cursor: pointer;
+        }
+        .contImg {
+            width: 50%;
+            overflow: hidden;
+        }
+        .contImg > img {
+            width: 100%;
+        }
+        
+        .parent {
+            display: flex;
+            gap: 20px;
+        }
+        .tabhead {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem 0;
+        }
+        .active {
+            background-color: #3835ff;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+        .show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="tabhead">
+                <div class="parent">
+                <div class="shaharNomi active">Paris</div>
+                <div class="shaharNomi">London</div>
+                <div class="shaharNomi">Dubai</div>
+                <div class="shaharNomi">Moscow</div>
+                <div class="shaharNomi">Tashkent</div>
+                </div>
+            </div>
+
+            <div class="tab_content">
+                <div class="text">
+                    <p> <b>Paris</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe
+                    natus
+                    numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis
+                    voluptatem
+                    sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum
+                    sequi
+                    consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto
+                    rerum. Blanditiis labore sed sapiente.</p>
+                </div>
+                <div class="contImg"><img src="./imgs/featured_215.webp" alt="Pizza"></div> 
+            </div>
+
+            <div class="tab_content">
+            <div>
+                <p><b>London</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe
+                natus
+                numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis
+                voluptatem
+                sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum
+                sequi
+                consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto
+                rerum. Blanditiis labore sed sapiente.</p>
+            </div>
+            <div class="contImg"><img src="./imgs/download (3).jpg" alt="Pizza"></div>
+            </div>
+
+            <div class="tab_content">
+            <div>
+                <p> <b>Dubai</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe
+                natus
+                numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis
+                voluptatem
+                sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum
+                sequi
+                consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto
+                rerum. Blanditiis labore sed sapiente.</p>
+            </div>
+            <div class="contImg"><img src="./imgs/download (2).jpg" alt="Pizza"></div>
+            </div>
+
+            <div class="tab_content">
+            <div>
+                <p><b>Moscow</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe
+                natus
+                numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis
+                voluptatem
+                sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum
+                sequi
+                consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto
+                rerum. Blanditiis labore sed sapiente.</p>
+            </div>
+            <div class="contImg"><img src="./imgs/download.jpg" alt="Pizza"></div>
+            </div>
+
+            <div class="tab_content">
+            <div>
+                <p><b>Tashkent</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe
+                natus
+                numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis
+                voluptatem
+                sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum
+                sequi
+                consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto
+                rerum. Blanditiis labore sed sapiente.</p>
+            </div>
+            <div class="contImg"><img src="./imgs/download (1).jpg" alt="Pizza"></div>
+            </div>
+        </div>
+
+        <button style="background-color: aquamarine; padding: 10px 20px; border: none; margin-left: 50%;"><a href="../index.html">Bosh Saxifaga qaytish</a></button>
+
+      <script src="../card/main.js"></script>
+</body>
+</html>
