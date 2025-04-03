@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css tailwind-->
     <link rel="stylesheet" href="./src/output.css">
+    <style>
+        .image {
+            position: relative; 
+            transition: transform 1s ease-in-out;
+        }
+    </style>
 </head>
 <body>
    <div class="max-w-[1111px] mx-auto">
@@ -48,16 +54,30 @@
          </div>
     </div>
          <!-- My Work -->
-         <div class="mt-[88px] ">
+         <div class="mt-[88px] flex flex-col items-center">
             <h1 class="text-center mb-14 font-bold text-[32px] text-dark-900">My Work</h1>
-            <div class="flex overflow-hidden gap-x-7">
-              <img class="w-[540px] h-[360px] object-cover" src="./images/Work.png" alt="">
-              <img class="w-[540px] h-[360px] object-cover" src="./images/work2.png" alt="">
-              <img class="w-[540px] h-[360px] object-cover" src="./images/Work3.png" alt="">
+            <div id="parent">
+              <div id="wrapper" class="flex gap-x-7 max-w-[1676px] overflow-hidden">
+                <div class="image min-w-[540px]">
+                    <img class="img w-[540px] h-[360px] object-cover" src="./images/Work.png" alt="">
+                  </div>
+                  <div class="image min-w-[540px]">
+                    <img class="img w-[540px] h-[360px] object-cover" src="./images/work2.png" alt="">
+                  </div>
+                  <div class="image min-w-[540px]">
+                    <img class="img w-[540px] h-[360px] object-cover" src="./images/Work3.png" alt="">
+                  </div>
+                  <div class="image min-w-[540px]">
+                    <img class="img w-[540px] h-[360px] object-cover" src="./images/work4.png" alt="">
+                  </div>
+                  <div class="image min-w-[540px]">
+                    <img class="img w-[540px] h-[360px] object-cover" src="./images/work6.png" alt="">
+                  </div>
+              </div>
             </div>
             <div class="text-center mt-14">
-                <i class="fa-solid fa-arrow-left p-8 mr-4 bg-dark-900 rounded-full text-white hover:bg-[#755CDE] active:bg-[#755CDE]"></i>
-                <i class="fa-solid fa-arrow-right p-8 bg-dark-900 rounded-full text-white hover:bg-[#755CDE] active:bg-[#755CDE]"></i>
+                <i id="left" class="fa-solid fa-arrow-left p-8 mr-4 bg-dark-900 rounded-full text-white hover:bg-[#755CDE] active:bg-[#755CDE]"></i>
+                <i id="right" class="fa-solid fa-arrow-right p-8 bg-dark-900 rounded-full text-white hover:bg-[#755CDE] active:bg-[#755CDE]"></i>
             </div>
          </div>
 
@@ -76,5 +96,7 @@
              </div>
           </div>
    
+          <script src="./app.js"></script>
+
 </body>
 </html>

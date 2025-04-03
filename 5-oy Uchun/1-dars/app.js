@@ -10,5 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
         lamp.style.color = "white";
     })
 
-
 })

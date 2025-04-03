@@ -86,3 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.append(card)
 
 });
+
+
+
+
+
+
+

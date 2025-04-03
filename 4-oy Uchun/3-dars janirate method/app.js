@@ -150,4 +150,15 @@ console.log(str3.padStartNew(4, 1234));
   console.log(str4.includes('@'));
   
 
-String.prototype.
+String.prototype.lengthNew = function() {
+    let str = String(this);
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        count++
+    }
+    return count
+}
+
+let str5 = 'salom'
+console.log(str5.lengthNew());  // 5
