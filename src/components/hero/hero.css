@@ -1,0 +1,41 @@
+.hero {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    margin-top: 35px;
+}
+.info {
+   max-width: 526px;
+   position: absolute;
+   left: 0;
+}
+.info .title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+}
+.info p.descr {
+    color: #8F95A5;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 40px;
+    padding-bottom: 61px;
+}
+.info button.startBtn {
+    width: 438px;
+    height: 118px;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    background-color: #263238;
+    color: white;
+}
+.hero img {
+    max-width: 924px;
+}

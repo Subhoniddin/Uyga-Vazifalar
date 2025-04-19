@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+}
+.menu-items {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.menu-item {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+}
+.menu-item a {
+    text-decoration: none;
+    color: #263238;
+}
+.logoLex {
+    color: gray;
+}
+.talkBtn {
+    width: 220px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid #263238;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    background-color: #fff;
+}
